@@ -21,6 +21,7 @@ console.log("c1 type is same as c2's type? " + (typeof (c1) === (typeof (c2))));
   styles: [`
   color : gray
   `, s3, c1
+  //,c2, or  x.s2 throws error "Failed to resolve styles at position 3 to a string"
 ]
 
 })
