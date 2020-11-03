@@ -1,5 +1,11 @@
 p{
     color:#112233;
-    background-color : #ff2244;
+    background-color : mistyrose;
+    border : 2px solid red;
+    padding : 15px;
     text-align : center;
+}
+.d
+{
+    a: #ff2244;
 }

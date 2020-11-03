@@ -7,6 +7,23 @@ import { Component } from '@angular/core';
   //styleUrls: ['./app.component.css']
 })
 export class ServerComponent {
-  serverId = 'node1';
+  static serverCnt = 0;
+  serverId = ++ ServerComponent.serverCnt;
+  serverName : string = 'node ' + this.serverId;
+  serverOnline = (this.serverId == 1 ? true : false);
+
+  
+
+  constructor() {
+    ///this.serverName = n;
+   }
+
+  getServerStatus(){
+    if(this.serverOnline){
+      return "online";
+    }else{
+      return "offline";
+    }
+  }
   
 }

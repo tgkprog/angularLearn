@@ -1,3 +1,6 @@
-<h3>servers </h3>
-<app-server></app-server>
+<h3>Servers </h3>
+<button class="btn btn-primary" [disabled] = "!allowAddServer" (click) = "doAddNewServer()" >Add Server</button>
+{{serverCreateMsg}}
+
+<app-server ></app-server>
 <app-server></app-server>
