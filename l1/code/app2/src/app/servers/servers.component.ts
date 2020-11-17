@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowAddServer = false;
   serverCreateMsg = "No server created";
+  serverName = "Default server";
 
   constructor() { }
 
@@ -26,7 +27,14 @@ export class ServersComponent implements OnInit {
   doAddNewServer() : void{
     console.log("Add");
     const dt = new Date();
-    this.serverCreateMsg = "Server crearted at " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+    this.serverCreateMsg = "Server crearted at " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds()
+    + " with name : " + this.serverName + ".";
   }
 
+  onServerNameTxtChange(event : Event) : void {
+    console.log(event);
+    //this.serverName
+   //// this.serverName = (<HTMLInputElement>event.target).value;
+
+  }
 }
