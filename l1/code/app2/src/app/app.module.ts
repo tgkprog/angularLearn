@@ -9,10 +9,11 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { ParaComponent } from './para/para.component';
+import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ServerComponent, ServersComponent, ParaComponent
+    AppComponent, ServerComponent, ServersComponent, ParaComponent, WarningAlertComponent
   ],
   imports: [
     BrowserModule, FormsModule

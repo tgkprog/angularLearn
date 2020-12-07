@@ -26,7 +26,8 @@ console.log("c1 type is same as c2's type? " + (typeof (c1) === (typeof (c2))));
 
 })
 export class ParaComponent implements OnInit {
-  c = 1;
+  static cnt = 0;
+  c = ++ParaComponent.cnt;
   constructor() { }
 
   ngOnInit(): void {

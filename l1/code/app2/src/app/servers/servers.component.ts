@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms'; 
 
 @Component({
   selector: 'app-servers',
@@ -36,5 +37,10 @@ export class ServersComponent implements OnInit {
     //this.serverName
    //// this.serverName = (<HTMLInputElement>event.target).value;
 
+  }
+
+  onUpdateTextTest1(event : Event) : void{
+    console.log(event);
+    console.log((<HTMLInputElement>event.target).value);
   }
 }
